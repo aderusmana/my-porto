@@ -66,20 +66,20 @@ export const aboutData = [
     ],
   },
   {
-    title: 'exprerience',
+    title: 'experience',
     info: [
       {
         title:
-          'Web Developer  - PT.Mobilogix Teknologi Indonesia , South Tangerang, Indonesia',
+          'Web Developer  - PT.Mobilogix Teknologi Indonesia, South Tangerang,  Indonesia',
         stage: '2021 - 2022',
       },
       {
-        title: 'It Staff  - Perpustakaan Nasional , Jakarta, Indonesia',
+        title: 'It Staff  - Perpustakaan Nasional ,Jakarta,  Indonesia',
         stage: '2019 - 2020',
       },
       {
         title:
-          'Administrative Staff  - Badan Pusat Statistik (Partner), Jakarta, Indonesia',
+          'Administrative Staff - Badan Pusat Statistik (Partner), Jakarta, Indonesia',
         stage: '2016 - 2019',
       },
     ],
@@ -104,9 +104,19 @@ export const aboutData = [
 ];
 const About = () => {
   const [index, setIndex] = useState(0);
+  const [isFullTextVisible, setIsFullTextVisible] = useState(false);
+
+  const toggleFullText = () => {
+    setIsFullTextVisible(!isFullTextVisible);
+  };
+  const text = `I am a web developer with 2 years of formal company and 3 years of freelance experience. My expertise lies in web application development, particularly using PHP with a focus on the Laravel framework, and I possess strong skills in managing both MySQL and PostgresSQL databases. Proficient in UI design using Bootstrap and Tailwind CSS, and experienced in the efficient use of tools like Docker and Git, I am adaptable to various operating systems, including Windows and Linux, and I am prepared to help you reach your web project goals.`;
 
   return (
-    <div className={'h-full bg-primary/30 py-40 text-center xl:text-left '}>
+    <div
+      className={
+        'max-h-screen  overflow-y-auto bg-primary/30 py-40 text-center xl:text-left'
+      }
+    >
       <Circles />
       {/* avatar */}
       <motion.div
@@ -114,7 +124,9 @@ const About = () => {
         initial={'hidden'}
         animate={'show'}
         exit={'hidden'}
-        className={'hidden xl:flex absolute bottom-0 -left-[370px]'}
+        className={
+          'hidden xl:flex  absolute bottom-0 -left-[260px] md:max-h-[800px] '
+        }
       >
         <Avatar />
       </motion.div>
@@ -123,7 +135,7 @@ const About = () => {
       gap-x-6"
       >
         {/* text */}
-        <div className={'flex-1 flex flex-col justify-center'}>
+        <div className={'flex-1 z-10 flex flex-col justify-center'}>
           <motion.h2
             variants={fadeIn('right', 0.2)}
             initial={'hidden'}
@@ -132,27 +144,45 @@ const About = () => {
             className={'h2'}
           >
             Hard Work <span className={'text-accent'}>stories </span>
-            Web Developer Specializing in PHP.
+            Web Dev in PHP.
           </motion.h2>
-          <motion.p
-            variants={fadeIn('right', 0.4)}
-            initial={'hidden'}
-            animate={'show'}
-            exit={'hidden'}
-            className={
-              'max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'
-            }
-          >
-            I am a web developer with 2 years of formal company and 3 years of
-            freelance experience. My expertise lies in web application
-            development, particularly using PHP with a focus on the Laravel
-            framework, and I possess strong skills in managing both MySQL and
-            PostgresSQL databases. Proficient in UI design using Bootstrap and
-            Tailwind CSS, and experienced in the efficient use of tools like
-            Docker and Git, I am adaptable to various operating systems,
-            including Windows and Linux, and I am prepared to help you reach
-            your web project goals.
-          </motion.p>
+          {isFullTextVisible ? (
+            <motion.p
+              variants={fadeIn('right', 0.4)}
+              initial={'hidden'}
+              animate={'show'}
+              exit={'hidden'}
+              className={
+                'max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 leading-2'
+              }
+            >
+              {text}
+              <button
+                onClick={toggleFullText}
+                className="bg-accent text-white px-1 py-0.5 rounded-full text-sm"
+              >
+                Read Less
+              </button>
+            </motion.p>
+          ) : (
+            <motion.p
+              variants={fadeIn('right', 0.4)}
+              initial={'hidden'}
+              animate={'show'}
+              exit={'hidden'}
+              className={
+                'max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 leading-2 justify-center'
+              }
+            >
+              {`${text.slice(0, 150)}...`}
+              <button
+                onClick={toggleFullText}
+                className="bg-accent text-white px-1 py-0.5 rounded-full text-sm"
+              >
+                Read More
+              </button>
+            </motion.p>
+          )}
           {/* counters */}
           <motion.div
             variants={fadeIn('right', 0.6)}
@@ -160,7 +190,7 @@ const About = () => {
             animate={'show'}
             exit={'hidden'}
             className={
-              'hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8'
+              ' md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8'
             }
           >
             <div className={'flex flex-1 xl:gap-4'}>
@@ -179,7 +209,7 @@ const About = () => {
                 </div>
                 <div
                   className={
-                    'text-xs uppercase tracking-[1px] leading-[1.4] max-w--[100px] '
+                    'text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] '
                   }
                 >
                   Years of Experience
@@ -217,7 +247,7 @@ const About = () => {
           initial={'hidden'}
           animate={'show'}
           exit={'hidden'}
-          className={'flex flex-col w-full xl:max-w-[48%] h-[480px]'}
+          className={'flex flex-col w-full xl:max-w-[65%] h-[480px]'}
         >
           <div className={'flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4'}>
             {aboutData.map((item, itemIndex) => {
@@ -252,17 +282,22 @@ const About = () => {
                   }
                 >
                   {/* title */}
-                  <div className={'font-light mb-2 md:mb-0'}>
+                  <div className={'font-light mb-2 md:mb-0 w-[75%]'}>
                     {item.title} {item.ipk && `- GPA ${item.ipk}`}
                   </div>
                   <div className={'hidden'}>-</div>
                   <div className="flex ">{item.stage}</div>
 
-                  <div className={'flex gap-x-4'}>
+                  <div className={'flex gap-x-4 '}>
                     {/* icons */}
                     {item.icons?.map((icon, i) => {
                       return (
-                        <div key={i} className={'text-3xl text-white '}>
+                        <div
+                          key={i}
+                          className={
+                            'text-2xl md:text-3xl lg:text-4xl text-white'
+                          }
+                        >
                           {icon}
                         </div>
                       );

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import avatar from './../public/avatar.png';
+import avatar from './../public/ava.png';
 
 const Avatar = () => {
   return (
@@ -10,7 +10,7 @@ const Avatar = () => {
         width={737}
         height={678}
         alt={'avatar'}
-        className={'translate-z-0 w-full h-full'}
+        className={'translate-z-0 w-full h-full '}
       />
     </div>
   );
