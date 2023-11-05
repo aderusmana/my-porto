@@ -1,14 +1,14 @@
 import React from 'react';
 
 //components
-import ProjectBtn from '@/components/ProjectBtn';
+import ProjectBtn from './../components/ProjectBtn';
 //framer motion
 import { motion } from 'framer-motion';
-import { fadeIn } from '@/variants';
+import { fadeIn } from 'variants';
 //avatar
-import Avatar from '@/components/Avatar';
+import Avatar from './../components/Avatar';
 //particles
-import ParticlesContainer from '@/components/ParticlesContainer';
+import ParticlesContainer from './../components/ParticlesContainer';
 import { TypeAnimation } from 'react-type-animation';
 import Link from 'next/link';
 const Home = () => {

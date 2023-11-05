@@ -19,13 +19,13 @@ import {
   SiPostgresql,
   SiTailwindcss,
 } from 'react-icons/si';
-import Circles from '@/components/Circles';
-import Avatar from '@/components/Avatar';
+import Circles from './../../components/Circles';
+import Avatar from './../../components/Avatar';
 
 //frame-morion
 
 import { motion } from 'framer-motion';
-import { fadeIn } from '@/variants';
+import { fadeIn } from '/variants';
 
 import CountUp from 'react-countup';
 

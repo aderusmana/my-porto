@@ -1,10 +1,10 @@
 'use client';
 import React, { useState } from 'react';
 
-import Circles from '@/components/Circles';
+import Circles from './../../components/Circles';
 
 import { motion } from 'framer-motion';
-import Bulb from 'components/Bulb';
+import Bulb from './../../components/Bulb';
 import { fadeIn } from '/variants';
 import { HiArrowRight } from 'react-icons/hi';
 import Swal from 'sweetalert2';

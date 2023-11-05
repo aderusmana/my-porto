@@ -1,9 +1,9 @@
 import React, { useRef, useState } from 'react';
-import ProjectCard from 'components/ProjectCard';
-import { motion, useInView } from 'framer-motion';
-import { fadeIn } from 'variants';
-import Bulb from 'components/Bulb';
-import Circles from 'components/Circles';
+import ProjectCard from './../../components/ProjectCard';
+import { motion } from 'framer-motion';
+import { fadeIn } from '/variants';
+import Bulb from './../../components/Bulb';
+import Circles from './../../components/Circles';
 
 const projectData = [
   {

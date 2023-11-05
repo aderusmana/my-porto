@@ -3,9 +3,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 //components
-import Circles from 'components/Circles';
-import Bulb from 'components/Bulb';
-import ServiceSlider from 'components/ServiceSlider';
+import Circles from './../../components/Circles';
+import Bulb from './../../components/Bulb';
+import ServiceSlider from './../../components/ServiceSlider';
 import { fadeIn } from '/variants';
 
 const Services = () => {
