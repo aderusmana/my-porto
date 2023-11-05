@@ -55,22 +55,28 @@ const Home = () => {
           >
             Thank You for Coming! Check Out My Portfolio.
           </motion.p>
-          <div className={'mb-5'}>
+          <motion.div
+            variants={fadeIn('left', 0.3)}
+            initial={'hidden'}
+            animate={'show'}
+            exit={'hidden'}
+            className={'mb-5 z-20'}
+          >
             <Link
               href="/contact"
-              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-r from-red-700 to-blue-500 hover:bg-accent text-white"
+              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-r from-red-700 to-blue-500 hover:bg-accent text-white cursor-pointer"
             >
               Hire Me
             </Link>
             <Link
-              href="/"
-              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-r from-red-700 to-blue-500 hover:bg-slate-800 text-white mt-3"
+              href="https://drive.google.com/uc?export=download&id=13MdDO4tEmruC1V0D-TkBKjFM963K0mUF"
+              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-r from-red-700 to-blue-500 hover:bg-slate-800 text-white mt-3 cursor-pointer"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                 Download CV
               </span>
             </Link>
-          </div>
+          </motion.div>
 
           {/* btn */}
           <motion.div
@@ -78,7 +84,7 @@ const Home = () => {
             initial={'hidden'}
             animate={'show'}
             exit={'hidden'}
-            className="flex justify-center xl:hidden relative"
+            className="flex justify-center xl:hidden relative z-20"
           >
             <ProjectBtn />
           </motion.div>

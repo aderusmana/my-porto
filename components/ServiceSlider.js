@@ -17,33 +17,34 @@ const serviceData = [
     icon: <SiSimilarweb />,
     title: 'Web Developer',
     description:
-      'As a web developer, I offer a range of services related to web development, maintenance, and enhancement. I specialize in creating visually appealing and responsive websites while ensuring their security and performance. I am also available to assist clients in redesigning existing websites and ensuring customer satisfaction.',
+      'Specializing in web development with a strong focus on security, performance, and customer satisfaction. Offering website creation and redesign services.',
   },
   {
     icon: <RxPencil2 />,
     title: 'Web Design',
     description:
-      'As a web designer, I offer a range of design services to create visually stunning and user-friendly websites. My expertise lies in crafting engaging layouts, selecting appealing color schemes, and ensuring an intuitive user experience. I work closely with clients to bring their web design visions to life, aiming for both aesthetics and functionality.',
+      'Crafting visually stunning and user-friendly websites with captivating layouts and intuitive user experiences that captivate visitors.',
   },
   {
     icon: <RxRocket />,
     title: 'SEO',
     description:
-      'I offer comprehensive services in the development of attractive, responsive websites that are optimized for search engines (SEO). With a focus on compelling design and robust SEO strategies, I assist clients in enhancing their online visibility and achieving success in the competitive digital landscape..',
+      'Optimizing websites for search engines with compelling design and robust SEO strategies to significantly enhance online visibility and boost organic traffic..',
   },
   {
     icon: <FaScrewdriverWrench />,
     title: 'Troubleshooting',
     description:
-      "I offer comprehensive services in troubleshooting software and hardware, assisting clients in resolving technical issues, improving system performance, and ensuring smooth operations. With experience in analyzing and fixing various problems, I am ready to be a reliable partner in ensuring clients' systems run optimally.",
+      'Comprehensive troubleshooting services for resolving technical issues, improving system performance, and ensuring smooth operations.',
   },
   {
     icon: <MdNetworkWifi />,
     title: 'Network',
     description:
-      "I offer comprehensive networking services to clients, encompassing network setup, configuration, and troubleshooting, to ensure a secure and efficient network infrastructure. With a focus on optimizing performance and addressing connectivity issues, I provide expert solutions for both new and existing networks, supporting clients' digital connectivity needs.",
+      'Providing network setup, configuration, and troubleshooting services to optimize performance and resolve connectivity issues.',
   },
 ];
+
 //required modules
 
 const ServiceSlider = () => {
@@ -64,7 +65,7 @@ const ServiceSlider = () => {
       }}
       freeMode={true}
       modules={[FreeMode]}
-      className={'h-[240px] sm:h-[320px]'}
+      className={'h-[300px] sm:h-[400px] w-[800px]'}
     >
       {serviceData.map((item, itemIndex) => {
         return (
@@ -75,7 +76,7 @@ const ServiceSlider = () => {
               {/*title & description */}
               <div className={'mb-8'}>
                 <div className={'text-lg font-bold'}>{item.title}</div>
-                <p className={'max-w-[400px] '}>{item.description}</p>
+                <p className={'max-w-[500px] '}>{item.description}</p>
               </div>
               {/* arrow */}
               <div className={'text-3xl'}>

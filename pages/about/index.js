@@ -143,8 +143,8 @@ const About = () => {
             exit={'hidden'}
             className={'h2'}
           >
-            Hard Work <span className={'text-accent'}>stories </span>
-            Web Dev in PHP.
+            Hard Work <span className={'text-accent'}>stories as </span>
+            Web Developer.
           </motion.h2>
           {isFullTextVisible ? (
             <motion.p
