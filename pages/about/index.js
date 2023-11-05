@@ -34,6 +34,7 @@ export const aboutData = [
     title: 'skills',
     info: [
       {
+        id: 1,
         title: 'Web Developer',
         icons: [
           <FaHtml5 />,
@@ -50,6 +51,7 @@ export const aboutData = [
         ],
       },
       {
+        id: 2,
         title: 'UI/UX Design',
         icons: [
           <FaFigma />,
@@ -59,8 +61,8 @@ export const aboutData = [
         ],
       },
       {
+        id: 3,
         title: 'Video Editor',
-
         icons: [<SiAdobepremierepro />],
       },
     ],
@@ -69,15 +71,18 @@ export const aboutData = [
     title: 'experience',
     info: [
       {
+        id: 1,
         title:
           'Web Developer  - PT.Mobilogix Teknologi Indonesia, South Tangerang,  Indonesia',
         stage: '2021 - 2022',
       },
       {
+        id: 2,
         title: 'It Staff  - Perpustakaan Nasional ,Jakarta,  Indonesia',
         stage: '2019 - 2020',
       },
       {
+        id: 3,
         title:
           'Administrative Staff - Badan Pusat Statistik (Partner), Jakarta, Indonesia',
         stage: '2016 - 2019',
@@ -88,12 +93,14 @@ export const aboutData = [
     title: 'education',
     info: [
       {
+        id: 1,
         title:
           'Bachelor of information System - Nusa Mandiri University, Jakarta, Indonesia',
         stage: '2021 - 2022',
         ipk: '3.88',
       },
       {
+        id: 2,
         title:
           'Associates of Information System - Bina Sarana Informatika University, Jakarta, Indonesia',
         stage: '2017 - 2020',
@@ -253,7 +260,7 @@ const About = () => {
             {aboutData.map((item, itemIndex) => {
               return (
                 <div
-                  key={itemIndex}
+                  key={item.id}
                   className={`${
                     index === itemIndex &&
                     'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'
@@ -276,7 +283,7 @@ const About = () => {
             {aboutData[index].info.map((item, itemIndex) => {
               return (
                 <div
-                  key={itemIndex}
+                  key={item.id}
                   className={
                     'flex-1 flex flex-col md:flex-row max-w-max gap-x-1 items-center text-white/60'
                   }

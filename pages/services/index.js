@@ -3,10 +3,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 //components
-import Circles from '@/components/Circles';
-import Bulb from '@/components/Bulb';
-import ServiceSlider from '@/components/ServiceSlider';
-import { fadeIn } from '@/variants';
+import Circles from 'components/Circles';
+import Bulb from 'components/Bulb';
+import ServiceSlider from 'components/ServiceSlider';
+import { fadeIn } from '/variants';
 
 const Services = () => {
   return (
@@ -32,10 +32,10 @@ const Services = () => {
               <span className={'text-accent'}> Services .</span>
             </motion.h2>
             <p className={'mb-4 max-w-[400px] mx-auto lg:mx-0'}>
-              "I'm a dedicated professional committed to delivering high-quality
+              Im a dedicated professional committed to delivering high-quality
               solutions to meet your needs. With a focus on innovation and a
               results-driven approach, I turn your vision into reality while
-              ensuring top-notch quality in every service."
+              ensuring top-notch quality in every service.
             </p>
           </div>
           <motion.div

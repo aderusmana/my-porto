@@ -2,9 +2,9 @@ import React from 'react';
 import { Sora } from '@next/font/google';
 
 //component
-import TopLeftImg from '@/components/TopLeftImg';
-import Nav from '@/components/Nav';
-import Header from '@/components/Header';
+import TopLeftImg from './../components/TopLeftImg';
+import Nav from './../components/Nav';
+import Header from './../components/Header';
 
 //font settings
 const sora = Sora({

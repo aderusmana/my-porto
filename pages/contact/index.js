@@ -4,8 +4,8 @@ import React, { useState } from 'react';
 import Circles from '@/components/Circles';
 
 import { motion } from 'framer-motion';
-import Bulb from '@/components/Bulb';
-import { fadeIn } from '@/variants';
+import Bulb from 'components/Bulb';
+import { fadeIn } from '/variants';
 import { HiArrowRight } from 'react-icons/hi';
 import Swal from 'sweetalert2';
 
@@ -88,7 +88,7 @@ const Contact = () => {
               exit={'hidden'}
               className={'h2 xl:mt-2'}
             >
-              Let's
+              Lets
               <span className={'text-accent'}> Connect .</span>
             </motion.h2>
             <motion.p
@@ -98,9 +98,9 @@ const Contact = () => {
               exit={'hidden'}
               className={'mb-4 max-w-[400px] mx-auto lg:mx-0'}
             >
-              I'm currently looking for a new opportunities, my inbox is always
-              open . Whether you have a question or just want to say hi, i'll
-              try best to get back to you !
+              Im currently looking for a new opportunities, my inbox is always
+              open . Whether you have a question or just want to say hi, ill try
+              best to get back to you !
             </motion.p>
             <motion.div
               variants={fadeIn('up', 0.4)}
@@ -189,7 +189,7 @@ const Contact = () => {
               </div>
               <button className="text-accent  hover:text-white bg-transparent hover:bg-accent border border-accent hover:border-gray-300 rounded-md py-2 px-4 transition-colors relative">
                 <span className="flex items-center justify-center">
-                  Let's Talk
+                  Lets Talk
                   <HiArrowRight className="ml-2 text-2xl transition-transform duration-300 transform hover:translate-x-2 " />
                 </span>
               </button>

@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import Socials from '@/components/Socials';
+import Socials from './../components/Socials';
 
 // images
 

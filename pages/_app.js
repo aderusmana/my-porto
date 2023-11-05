@@ -6,7 +6,7 @@ import { useRouter } from 'next/router';
 
 //frame-motion
 import { AnimatePresence, motion } from 'framer-motion';
-import Transition from '@/components/Transition';
+import Transition from './../components/Transition';
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
   return (

@@ -1,10 +1,9 @@
 import React, { useRef, useState } from 'react';
-import ProjectCard from '@/components/ProjectCard';
+import ProjectCard from 'components/ProjectCard';
 import { motion, useInView } from 'framer-motion';
-import { fadeIn } from '@/variants';
-import ParticlesContainer from '@/components/ParticlesContainer';
-import Bulb from '@/components/Bulb';
-import Circles from '@/components/Circles';
+import { fadeIn } from 'variants';
+import Bulb from 'components/Bulb';
+import Circles from 'components/Circles';
 
 const projectData = [
   {
@@ -84,7 +83,6 @@ const projectData = [
 const Work = () => {
   const [tag, setTag] = useState('All');
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
 
   const handleTagChange = (newTag) => {
     setTag(newTag);
