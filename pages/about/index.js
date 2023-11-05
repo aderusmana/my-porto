@@ -63,7 +63,7 @@ export const aboutData = [
       {
         id: 3,
         title: 'Video Editor',
-        icons: [<SiAdobepremierepro />],
+        icons: [<SiAdobepremierepro key="adobepremierepro" />],
       },
     ],
   },
