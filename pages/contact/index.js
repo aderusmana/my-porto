@@ -96,7 +96,7 @@ const Contact = () => {
               initial={'hidden'}
               animate={'show'}
               exit={'hidden'}
-              className={'mb-4 max-w-[400px] mx-auto lg:mx-0'}
+              className={'mb-4 max-w-[400px] mx-auto hidden xl:block lg:mx-0'}
             >
               Im currently looking for a new opportunities, my inbox is always
               open . Whether you have a question or just want to say hi, ill try
@@ -130,9 +130,9 @@ const Contact = () => {
             initial={'hidden'}
             animate={'show'}
             exit={'hidden'}
-            className={'w-full xl:max-w-[50%] mt-10'}
+            className={'w-full xl:max-w-[40%] mt-10'}
           >
-            <form className="flex flex-col gap-y-2 " onSubmit={handleSubmit}>
+            <form className="flex flex-col gap-y-0 " onSubmit={handleSubmit}>
               <div className="flex justify-between">
                 <div className="w-[48%]">
                   <label htmlFor="name" className="text-white">
@@ -187,7 +187,7 @@ const Contact = () => {
                   className="w-full border border-gray-300 rounded-md py-2 px-3 bg-primary"
                 ></textarea>
               </div>
-              <button className="text-accent  hover:text-white bg-transparent hover:bg-accent border border-accent hover:border-gray-300 rounded-md py-2 px-4 transition-colors relative">
+              <button className="text-accent mb-5 hover:text-white bg-transparent hover:bg-accent border border-accent hover:border-gray-300 rounded-md py-2 px-4 transition-colors relative">
                 <span className="flex items-center justify-center">
                   Lets Talk
                   <HiArrowRight className="ml-2 text-2xl transition-transform duration-300 transform hover:translate-x-2 " />

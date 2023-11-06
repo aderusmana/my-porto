@@ -65,21 +65,21 @@ const ServiceSlider = () => {
       }}
       freeMode={true}
       modules={[FreeMode]}
-      className={'h-[300px] sm:h-[400px] w-[800px]'}
+      className={'h-[250px] sm:h-[350px] mb-10'}
     >
       {serviceData.map((item, itemIndex) => {
         return (
           <SwiperSlide key={itemIndex}>
             <div className=" bg-[rgba(65,47,123,0.15)] rounded-lg p-6 flex flex-col gap-4 group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300">
               {/* icon */}
-              <div className={'text-4xl text-accent mb-4'}>{item.icon}</div>
+              <div className={'text-2xl text-accent mb-4'}>{item.icon}</div>
               {/*title & description */}
               <div className={'mb-8'}>
-                <div className={'text-lg font-bold'}>{item.title}</div>
-                <p className={'max-w-[500px] '}>{item.description}</p>
+                <div className={'text-md font-bold'}>{item.title}</div>
+                <p className={'max-w-[400px] text-sm '}>{item.description}</p>
               </div>
               {/* arrow */}
-              <div className={'text-3xl'}>
+              <div className={'text-2xl'}>
                 <RxArrowTopRight
                   className={
                     'group-hover:rotate-45 group-hover:text-accent transition-all ' +

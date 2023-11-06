@@ -82,7 +82,6 @@ const projectData = [
 ];
 const Work = () => {
   const [tag, setTag] = useState('All');
-  const ref = useRef(null);
 
   const handleTagChange = (newTag) => {
     setTag(newTag);

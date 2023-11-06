@@ -8,20 +8,23 @@ const Socials = () => {
   return (
     <div className={'flex items-center gap-x-5 text-lg'}>
       <Link
-        href={'/youtube'}
+        href={'https://www.instagram.com/aderusmana22/?hl=id/'}
         className={'hover:text-accent transition-all duration-300'}
+        target={'_blank'}
       >
         <RiInstagramLine />
       </Link>
       <Link
-        href={'/youtube'}
+        href={'https://www.linkedin.com/in/ade-rusmana/'}
         className={'hover:text-accent transition-all duration-300'}
+        target={'_blank'}
       >
         <RiLinkedinLine />
       </Link>
       <Link
-        href={'/youtube'}
-        className={'hover:text-accent transition-all duration-300'}
+        href={'https://github.com/aderusmana?tab=repositories'}
+        className={'hover:text-accent transition-all duration-300 '}
+        target={'_blank'}
       >
         <RiGithubLine />
       </Link>
