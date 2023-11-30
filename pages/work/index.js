@@ -75,12 +75,7 @@ const projectData = [
     image: '/project/penggajian1.png',
     tags: ['All', 'Web'],
     gitUrl: '/',
-    previewUrl: [
-      '/project/penggajian1.png',
-      '/project/penggajian1.png',
-      '/project/penggajian1.png',
-      '/project/penggajian1.png',
-    ],
+    previewUrl: ['/project/penggajian1.png'],
   },
   {
     id: 6,
@@ -89,12 +84,7 @@ const projectData = [
     image: '/project/absensi1.png',
     tags: ['All', 'Web'],
     gitUrl: 'https://github.com/aderusmana/AbsensiGPS.git',
-    previewUrl: [
-      '/project/absensi1.png',
-      '/project/absensi1.png',
-      '/project/absensi1.png',
-      '/project/absensi1.png',
-    ],
+    previewUrl: ['/project/absensi1.png'],
   },
   {
     id: 7,
@@ -103,12 +93,7 @@ const projectData = [
     image: '/project/gdrive-clone.png',
     tags: ['All', 'Web'],
     gitUrl: 'https://github.com/aderusmana/gdrive-clone.git',
-    previewUrl: [
-      '/project/gdrive-clone.png',
-      '/project/gdrive-clone.png',
-      '/project/gdrive-clone.png',
-      '/project/gdrive-clone.png',
-    ],
+    previewUrl: ['/project/gdrive-clone.png'],
   },
   {
     id: 8,
@@ -117,12 +102,7 @@ const projectData = [
     image: '/project/github-app.png',
     tags: ['All', 'Mobile'],
     gitUrl: '/',
-    previewUrl: [
-      '/project/github-app.png',
-      '/project/github-app.png',
-      '/project/github-app.png',
-      '/project/github-app.png',
-    ],
+    previewUrl: ['/project/github-app.png'],
   },
 ];
 const Work = () => {
