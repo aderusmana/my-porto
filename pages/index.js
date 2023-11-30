@@ -69,7 +69,7 @@ const Home = () => {
               Hire Me
             </Link>
             <Link
-              href="https://drive.google.com/uc?export=download&id=13MdDO4tEmruC1V0D-TkBKjFM963K0mUF"
+              href="https://drive.google.com/uc?export=download&id=1mUoyfBeFyT-Dlme18aINgn7t5FYsCc7X"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-r from-red-700 to-blue-500 hover:bg-slate-800 text-white mt-3 cursor-pointer"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">

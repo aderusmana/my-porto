@@ -12,8 +12,14 @@ const projectData = [
     description: 'Website Rental Motor dibangun dengan CI3',
     image: '/project/rental1.png',
     tags: ['All', 'Web'],
-    gitUrl: '/',
-    previewgUrl: '/',
+    gitUrl: 'https://github.com/aderusmana/Siremot.git',
+    previewUrl: [
+      '/project/rental1.png',
+      '/project/rental2.png',
+      '/project/rental3.png',
+      '/project/rental4.png',
+      '/project/rental5.png',
+    ],
   },
   {
     id: 2,
@@ -22,17 +28,30 @@ const projectData = [
       'Website Imdb Movie dibangun dengan Monggo,Express, React,NodeJs',
     image: '/project/nonton1.png',
     tags: ['All', 'Web'],
-    gitUrl: '/',
-    previewgUrl: '/',
+    gitUrl: 'https://nontondong.vercel.app/',
+    previewUrl: [
+      '/project/nonton2.png',
+      '/project/nonton3.png',
+      '/project/nonton4.png',
+      '/project/nonton5.png',
+      '/project/nonton6.png',
+      '/project/nonton7.png',
+    ],
   },
   {
     id: 3,
     title: 'Listrik Payment Website',
     description: 'Website Pembayaran Listrik dibangun dengan CI3',
-    image: '/project/listrik-app1.png',
+    image: '/project/listrik1.png',
     tags: ['All', 'Web'],
-    gitUrl: '/',
-    previewgUrl: '/',
+    gitUrl: 'https://github.com/aderusmana/Listrik_app.git',
+    previewUrl: [
+      '/project/listrik1.png',
+      '/project/listrik2.png',
+      '/project/listrik3.png',
+      '/project/listrik4.png',
+      '/project/listrik5.png',
+    ],
   },
   {
     id: 4,
@@ -41,7 +60,13 @@ const projectData = [
     image: '/project/inventory1.png',
     tags: ['All', 'Web'],
     gitUrl: '/',
-    previewgUrl: '/',
+    previewUrl: [
+      '/project/inventory1.png',
+      '/project/inventory2.png',
+      '/project/inventory3.png',
+      '/project/inventory4.png',
+      '/project/inventory5.png',
+    ],
   },
   {
     id: 5,
@@ -50,16 +75,27 @@ const projectData = [
     image: '/project/penggajian1.png',
     tags: ['All', 'Web'],
     gitUrl: '/',
-    previewgUrl: '/',
+    previewUrl: [
+      '/project/penggajian1.png',
+      '/project/penggajian1.png',
+      '/project/penggajian1.png',
+      '/project/penggajian1.png',
+    ],
   },
   {
     id: 6,
     title: 'AbsensiGPS Website',
     description: 'Website Absensi + GPS + Webcam dibangun dengan Laravel',
-    image: '/project/absensi-web.png',
+    image: '/project/absensi1.png',
     tags: ['All', 'Web'],
-    gitUrl: '/',
-    previewgUrl: '/',
+    gitUrl: 'https://github.com/aderusmana/AbsensiGPS.git',
+    previewUrl: [
+      '/project/absensi1.png',
+      '/project/absensi1.png',
+      '/project/absensi1.png',
+      '/project/absensi1.png',
+      '/project/absensi1.png',
+    ],
   },
   {
     id: 7,
@@ -67,8 +103,13 @@ const projectData = [
     description: 'Website Clone Google Drive dibangun dengan Laravel dan Vue',
     image: '/project/gdrive-clone.png',
     tags: ['All', 'Web'],
-    gitUrl: '/',
-    previewgUrl: '/',
+    gitUrl: 'https://github.com/aderusmana/gdrive-clone.git',
+    previewUrl: [
+      '/project/gdrive-clone.png',
+      '/project/gdrive-clone.png',
+      '/project/gdrive-clone.png',
+      '/project/gdrive-clone.png',
+    ],
   },
   {
     id: 8,
@@ -77,7 +118,12 @@ const projectData = [
     image: '/project/github-app.png',
     tags: ['All', 'Mobile'],
     gitUrl: '/',
-    previewgUrl: '/',
+    previewUrl: [
+      '/project/github-app.png',
+      '/project/github-app.png',
+      '/project/github-app.png',
+      '/project/github-app.png',
+    ],
   },
 ];
 const Work = () => {
@@ -163,6 +209,8 @@ const Work = () => {
                 description={project.description}
                 imgUrl={project.image}
                 tags={project}
+                gitUrl={project.gitUrl}
+                previewUrl={project.previewUrl}
               />
             ))}
           </motion.div>
