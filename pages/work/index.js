@@ -94,7 +94,6 @@ const projectData = [
       '/project/absensi1.png',
       '/project/absensi1.png',
       '/project/absensi1.png',
-      '/project/absensi1.png',
     ],
   },
   {
