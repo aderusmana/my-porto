@@ -12,7 +12,9 @@ import Socials from './../components/Socials';
 const Header = () => {
   return (
     <div
-      className={'absolute  w-full flex items-center px-16 xl:px-0 xl:h-[90px]'}
+      className={
+        'absolute  w-full flex items-center px-16 xl:px-0 xl:h-[90px] z-20'
+      }
     >
       <div className={'container mx-auto'}>
         <div

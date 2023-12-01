@@ -22,8 +22,6 @@ import {
 import Circles from './../../components/Circles';
 import Avatar from './../../components/Avatar';
 
-//frame-morion
-
 import { motion } from 'framer-motion';
 import { fadeIn } from '/variants';
 
@@ -280,7 +278,7 @@ const About = () => {
               'py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start '
             }
           >
-            {aboutData[index].info.map((item, itemIndex) => {
+            {aboutData[index].info.map((item) => {
               return (
                 <div
                   key={item.id}
