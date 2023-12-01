@@ -103,7 +103,9 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
                     alt={`Preview ${index + 1}`}
                     style={{
                       width: 'auto',
-                      height: 'auto',
+                      height: '500px',
+                      display: 'inline-block',
+                      textAlign: 'center',
                     }}
                   />
                 </SwiperSlide>
